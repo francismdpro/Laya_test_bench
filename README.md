@@ -4,6 +4,9 @@ Banc de test pour [Laya](https://github.com/NandhaKishorM/laya), le moteur de d�
 
 Laya répond à toutes les questions en **une seule passe non-autoregressive** avec des probabilités calibrées, dans plus de 100 langues. Les poids du modèle sont diffusés sous licence Apache 2.0.
 
+<img width="1920" height="1040" alt="image" src="https://github.com/user-attachments/assets/5ea0271d-b04a-43f9-8a9e-43072dce0453" />
+
+
 ## Fonctionnalités
 
 - `laya_run.py` : script CLI générique — lit n'importe quel fichier JSON `{state, questions}`, appelle Laya, mesure les temps et met en forme les réponses selon leur type.
