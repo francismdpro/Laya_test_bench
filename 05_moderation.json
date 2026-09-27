@@ -1,0 +1,33 @@
+{
+  "state": {
+    "plateforme": "forum communautaire",
+    "message": "Encore ce mec qui pollue le fil avec ses théories fumeuses, franchement ferme ta gueule et va réviser, t'es une vraie catastrophe ambulante.",
+    "contexte": "Réponse à un débat sur les énergies renouvelables."
+  },
+  "questions": {
+    "categorie_probleme": {
+      "type": "choice",
+      "instructions": "Quel type de problème ce message pose-t-il ?",
+      "criteria": {
+        "insulte": "Injures, attaques verbales directes envers une personne.",
+        "desinformation": "Affirmations fausses ou trompeuses présentées comme des faits.",
+        "spam": "Publicité, répétition, contenu non pertinent.",
+        "aucun": "Message qui respecte les règles du forum."
+      }
+    },
+    "propos_haineux": {
+      "type": "noul",
+      "instructions": "Le message cible-t-il une personne avec des propos injurieux ?"
+    },
+    "gravite_sanction": {
+      "type": "score",
+      "instructions": "Évaluer le niveau de sanction approprié pour l'auteur.",
+      "criteria": [
+        "Aucune sanction, simple rappel des règles.",
+        "Avertissement privé.",
+        "Suspension temporaire du compte.",
+        "Bannissement définitif."
+      ]
+    }
+  }
+}

@@ -1,0 +1,5 @@
+# Laya Test Bench - dépendances
+# Python 3.10+ recommandé
+
+laya>=0.3          # moteur de décision (installe torch comme dépendance)
+flask>=3.0         # serveur de l'interface web (app_laya.py uniquement)

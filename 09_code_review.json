@@ -1,0 +1,33 @@
+{
+  "state": {
+    "source": "pull request",
+    "langage_probable": "Python",
+    "diff": "def get_user(user_id):\n    conn = sqlite3.connect('app.db')\n    cur = conn.cursor()\n    cur.execute(f\"SELECT * FROM users WHERE id = {user_id}\")\n    row = cur.fetchone()\n    conn.close()\n    return row\n\npassword = 'admin1234'\nAPI_KEY = 'sk-live-9f2b8c31d0a7'"
+  },
+  "questions": {
+    "probleme_principal": {
+      "type": "choice",
+      "instructions": "Quel est le problème le plus grave dans ce code ?",
+      "criteria": {
+        "injection_sql": "Requête SQL construite par concaténation, injection possible.",
+        "secrets_exposes": "Mot de passe ou clé API en clair dans le code.",
+        "gestion_ressources": "Connexion non fermée en cas d'exception, fuite de ressources.",
+        "aucun": "Le code ne présente pas de problème notable."
+      }
+    },
+    "secret_en_clair": {
+      "type": "noul",
+      "instructions": "Le code contient-il des identifiants secrets en clair ?"
+    },
+    "qualite_globale": {
+      "type": "score",
+      "instructions": "Évaluer la qualité globale de ce code en vue de la fusion.",
+      "criteria": [
+        "À fusionner tel quel.",
+        "À fusionner avec des remarques mineures.",
+        "À corriger avant fusion, problèmes réels.",
+        "À refuser, réécriture nécessaire."
+      ]
+    }
+  }
+}

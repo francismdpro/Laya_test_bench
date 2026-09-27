@@ -1,0 +1,32 @@
+{
+  "state": {
+    "subject": "Facturation - facture en double",
+    "body": "Bonjour,\n\nJe constate que j'ai été facturé deux fois pour la même commande. Merci de me rembourser la facture en trop aujourd'hui.\n\nCordialement,\nJean Dupont"
+  },
+  "questions": {
+    "queue": {
+      "type": "choice",
+      "instructions": "Dans quel service doit aller ce ticket ?",
+      "criteria": {
+        "billing": "Paiements, factures, remboursements.",
+        "technical": "Bugs, erreurs techniques, indisponibilités.",
+        "other": "Tout le reste."
+      }
+    },
+    "refund_requested": {
+      "type": "noul",
+      "instructions": "Le client demande-t-il explicitement un remboursement ?"
+    },
+    "urgency": {
+      "type": "score",
+      "instructions": "Évaluer le niveau d'urgence de ce ticket.",
+      "criteria": [
+        "Pas urgent du tout.",
+        "Peu urgent.",
+        "Moyennement urgent.",
+        "Urgent.",
+        "Très urgent, à traiter immédiatement."
+      ]
+    }
+  }
+}

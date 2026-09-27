@@ -1,0 +1,32 @@
+{
+  "state": {
+    "source": "dépêche financière",
+    "titre": "Nexans divise son action et relève ses prévisions",
+    "corps": "Le câblier français Nexans a annoncé ce matin un chiffre d'affaires trimestriel en hausse de 12% à changes constants, porté par la demande de câbles électriques liés à la transition énergétique. La direction relève ses objectifs annuels de marge et annonce une division par quatre du nominal de l'action. Le titre gagne 4% à l'ouverture."
+  },
+  "questions": {
+    "sentiment": {
+      "type": "choice",
+      "instructions": "Quel est le ton général de cette dépêche pour l'action ?",
+      "criteria": {
+        "haussier": "Nouvelles positives, perspectives favorables.",
+        "baissier": "Nouvelles négatives, dégradation des perspectives.",
+        "neutre": "Informations sans impact directionnel clair."
+      }
+    },
+    "mention_resultats": {
+      "type": "noul",
+      "instructions": "Le texte mentionne-t-il des résultats trimestriels chiffrés ?"
+    },
+    "impact_court_terme": {
+      "type": "score",
+      "instructions": "Évaluer l'ampleur du mouvement de cours attendu.",
+      "criteria": [
+        "Aucun mouvement notable (< 1%).",
+        "Mouvement faible (1 à 3%).",
+        "Mouvement marqué (3 à 7%).",
+        "Mouvement fort (> 7%)."
+      ]
+    }
+  }
+}

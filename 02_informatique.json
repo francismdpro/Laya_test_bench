@@ -1,0 +1,34 @@
+{
+  "state": {
+    "source": "ticket support interne",
+    "titre": "Serveur de prod HS",
+    "corps": "Depuis ce matin 9h, l'application de paie renvoie des erreurs 503. Le service nginx tourne mais le backend Java ne répond plus au healthcheck. La mémoire du conteneur est saturée (98%). Redémarrer le pod résout le problème temporairement mais l'erreur revient toutes les deux heures."
+  },
+  "questions": {
+    "cause_probable": {
+      "type": "choice",
+      "instructions": "Quelle est la cause la plus probable du dysfonctionnement ?",
+      "criteria": {
+        "fuite_memoire": "Consommation mémoire croissante jusqu'à saturation.",
+        "reseau": "Problème réseau, DNS, certificat ou pare-feu.",
+        "config": "Erreur de configuration ou de déploiement.",
+        "materiel": "Panne matérielle, disque ou CPU défaillant.",
+        "attaque": "Attaque, surcharge malveillante ou intrusion."
+      }
+    },
+    "impact_paie": {
+      "type": "noul",
+      "instructions": "La paie des employés est-elle directement impactée ?"
+    },
+    "priorite_intervention": {
+      "type": "score",
+      "instructions": "Évaluer la priorité d'intervention de l'équipe technique.",
+      "criteria": [
+        "Peut attendre la prochaine fenêtre de maintenance.",
+        "À traiter dans la journée.",
+        "À traiter dans l'heure.",
+        "Immédiat, cellule de crise nécessaire."
+      ]
+    }
+  }
+}

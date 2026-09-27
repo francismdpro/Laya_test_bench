@@ -1,0 +1,46 @@
+{
+  "state": {
+    "source": "suivi de colis",
+    "colis": {
+      "numero": "COL-88421-FR",
+      "destination": "Reims, France",
+      "promis_le": "23 septembre",
+      "evenements": [
+        "20 sept. 08:12 - Colis pris en charge à Lyon (entrepôt 04)",
+        "21 sept. 22:40 - Départ du centre de tri de Chilly-Mazarin",
+        "22 sept. 09:05 - Colis bloqué : adresse incomplète détectée",
+        "23 sept. 14:30 - Toujours en attente de régularisation, retard signalé au client",
+        "24 sept. 07:15 - Colis retourné à l'expéditeur faute de régularisation"
+      ]
+    },
+    "contenu_declare": "Matériel électronique, 890 EUR"
+  },
+  "questions": {
+    "statut_final": {
+      "type": "choice",
+      "instructions": "Quel est le statut final du colis ?",
+      "criteria": {
+        "livre": "Colis livré au destinataire.",
+        "en_cours": "Colis en transit, livraison encore prévue.",
+        "bloque": "Colis bloqué en attente d'une action.",
+        "retourne": "Colis retourné à l'expéditeur.",
+        "perdu": "Colis perdu ou indiqué introuvable."
+      }
+    },
+    "client_informe": {
+      "type": "noul",
+      "instructions": "Le client a-t-il été informé du problème de livraison ?"
+    },
+    "risque_litige": {
+      "type": "score",
+      "instructions": "Évaluer le risque que le destinataire ouvre un litige commercial.",
+      "criteria": [
+        "Risque quasi nul.",
+        "Risque faible, simple mécontentement passager.",
+        "Risque significatif, client furieux.",
+        "Risque très élevé, litige quasi certain.",
+        "Litige déjà engagé de facto."
+      ]
+    }
+  }
+}

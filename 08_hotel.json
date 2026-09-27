@@ -1,0 +1,35 @@
+{
+  "state": {
+    "source": "avis client en ligne",
+    "hotel": "Hôtel des Alizés, 3 étoiles, Martinique",
+    "avis": "Séjour d'une semaine en juillet. Cadre magnifique et piscine superbe, mais la climatisation de notre chambre n'a jamais fonctionné malgré trois signalements à la réception. Le petit-déjeuner était correct sans plus. Nous avons demandé une remise sur la prestation, la direction a refusé s'excusant par courriel.",
+    "note": "2/5"
+  },
+  "questions": {
+    "categorie_reclamation": {
+      "type": "choice",
+      "instructions": "Quelle est la catégorie principale de réclamation du client ?",
+      "criteria": {
+        "confort_chambre": "Équipement ou confort de la chambre défaillants.",
+        "restauration": "Qualité de la nourriture ou du service.",
+        "personnel": "Comportement ou efficacité du personnel.",
+        "tarif": "Prix, remboursement ou litige financier.",
+        "proprete": "Hygiène et propreté des lieux."
+      }
+    },
+    "remboursement_demande": {
+      "type": "noul",
+      "instructions": "Le client a-t-il demandé une compensation financière ?"
+    },
+    "risque_recurrent": {
+      "type": "score",
+      "instructions": "Évaluer le risque que ce client ne revienne pas dans cet hôtel.",
+      "criteria": [
+        "Risque faible, incident isolé bien géré.",
+        "Risque modéré, client déçu mais réconciliable.",
+        "Risque élevé, client probablement perdu.",
+        "Risque très élevé, client perdu et défavorable en ligne."
+      ]
+    }
+  }
+}

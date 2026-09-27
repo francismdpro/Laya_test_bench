@@ -1,0 +1,34 @@
+{
+  "state": {
+    "source": "résumé de match",
+    "match": "FC Lorient - AS Saint-Étienne",
+    "texte": "Match fou au Moustoir ! Menés 2-0 à la mi-temps, les Lorientais sont revenus en dix minutes après l'heure de jeu grâce à un doublé de leur attaquant de 19 ans sorti du banc. Dans le temps additionnel, les Verts obtiennent un penalty, stoppé par le gardien breton sur une frappe molle. Score final : 2-2, dans une ambiance de feu."
+  },
+  "questions": {
+    "sport": {
+      "type": "choice",
+      "instructions": "De quel sport s'agit-il ?",
+      "criteria": {
+        "football": "Football, soccer.",
+        "rugby": "Rugby à XV ou à XIII.",
+        "basket": "Basket-ball.",
+        "handball": "Handball."
+      }
+    },
+    "equipe_domicile_gagne": {
+      "type": "noul",
+      "instructions": "L'équipe à domicile a-t-elle gagné le match ?"
+    },
+    "spectacularite": {
+      "type": "score",
+      "instructions": "Évaluer le caractère spectaculaire du match.",
+      "criteria": [
+        "Match ennuyeux et sans relief.",
+        "Match correct, quelques moments intéressants.",
+        "Bon match, du suspense et des rebondissements.",
+        "Match mémorable, scénario exceptionnel.",
+        "Match historique, entré dans les annales du club."
+      ]
+    }
+  }
+}

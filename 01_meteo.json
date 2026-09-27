@@ -1,0 +1,33 @@
+{
+  "state": {
+    "source": "Météo-France - bulletin régional",
+    "texte": "Alerte orange maintenue sur le département du Var. Des orages violents sont attendus en fin de journée avec des rafales pouvant atteindre 110 km/h et des précipitations de l'ordre de 80 mm en moins de 3 heures. Risque de crues soudaines sur les communes côtières."
+  },
+  "questions": {
+    "type_alerte": {
+      "type": "choice",
+      "instructions": "Quel type de phénomène météo est décrit ?",
+      "criteria": {
+        "orage": "Orages, foudre, rafales de vent violentes.",
+        "canicule": "Chaleur extrême, températures anormalement élevées.",
+        "neige": "Neige, verglas, froid extrême.",
+        "inondation": "Crues, montée des eaux, pluies diluviennes."
+      }
+    },
+    "evacuation": {
+      "type": "noul",
+      "instructions": "Le bulletin recommande-t-il une évacuation de la population ?"
+    },
+    "gravite": {
+      "type": "score",
+      "instructions": "Évaluer la gravité du phénomène décrit.",
+      "criteria": [
+        "Phénomène bénin, sans impact notable.",
+        "Phénomène modéré, quelques perturbations possibles.",
+        "Phénomène marqué, vigilance renforcée nécessaire.",
+        "Phénomène dangereux, dommages probables.",
+        "Phénomène exceptionnel, danger vital immédiat."
+      ]
+    }
+  }
+}

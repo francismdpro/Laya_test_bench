@@ -1,0 +1,44 @@
+{
+  "state": {
+    "source": "fiche recette",
+    "titre": "Risotto aux champignons des bois",
+    "ingredients": [
+      "riz arborio",
+      "champignons de paris",
+      "cèpes séchés",
+      "bouillon de légumes",
+      "parmesan",
+      "beurre",
+      "oignon",
+      "vin blanc"
+    ],
+    "etapes": "Réhydrater les cèpes 30 minutes. Faire revenir l'oignon, nacrer le riz, déglacer au vin blanc, puis mouiller louche par louche avec le bouillon en remuant 18 minutes sans interruption. Incorporer champignons, parmesan et beurre hors du feu. Servir immédiatement."
+  },
+  "questions": {
+    "type_plat": {
+      "type": "choice",
+      "instructions": "Quel est le type de plat décrit ?",
+      "criteria": {
+        "entree": "Plat servi en début de repas.",
+        "plat_principal": "Plat principal, cœur du repas.",
+        "accompagnement": "Plat servi en accompagnement d'une viande ou d'un poisson.",
+        "dessert": "Plat sucré de fin de repas."
+      }
+    },
+    "vegetarien": {
+      "type": "noul",
+      "instructions": "La recette est-elle végétarienne telle qu'écrite ?"
+    },
+    "difficulte": {
+      "type": "score",
+      "instructions": "Évaluer la difficulté d'exécution de cette recette pour un cuisinier amateur.",
+      "criteria": [
+        "Très facile, aucune technique particulière.",
+        "Facile, quelques gestes simples.",
+        "Intermédiaire, nécessite de l'attention et un bon timing.",
+        "Difficile, technique exigeante et expérience requise.",
+        "Très difficile, réservé aux cuisiniers confirmés."
+      ]
+    }
+  }
+}
